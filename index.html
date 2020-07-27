@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Definiendo el título de la Página Principal -->
+    <title>Divisoria Trading S.R.L</title>
+    <!-- Utilizamos Normalize para conserve la apariencia en Navegores -->
+    <!-- Con ese estilo aseguramos que el navegador no aplique otros estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado inicio">
+        <!-- Contenido Principal -->
+        <div class="contenido hijos-contenido">
+            <!-- Barra Principal -->
+            <div class="barra">
+                <!-- Asignando referencia al Logo -->
+                <a href="index.html">
+                    <!-- Logo de la Empresa -->
+                    <img src="imagenes/logo.png" alt="Logo Divisoria">
+                </a>
+
+                <!-- Navegación Superior -->
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contactos">Contactos</a>
+                </nav>
+            </div>
+            <!-- Enunciado Principal -->
+            <h1>Empresa Productora de Chocolates</h1>
+        </div>
+    </header>
+
+    <!-- Sección de Valor Agregado de la Empresa -->
+    <section class="contenido seccion">
+
+        <h2 class="fino centrar">Principios de la Empresa</h2>
+
+        <div class="iconos-nosotros">
+            <div class="iconos">
+                <img src="imagenes/icono1.svg" alt="Icono Calidad">
+                <h3>Calidad</h3>
+                <p>Nuestros productos cumplen con la certificación ISO 9001, que nos asegura que el producto
+                    cumple todos los estandares de calidad para la venta.
+                </p>
+            </div>
+
+            <div class="iconos">
+                <img src="imagenes/icono2.svg" alt="Icono Precios">
+                <h3>Precios Cómodos</h3>
+                <p>Nuestros precios están en una línea media del mercado, siendo facil su adquisición,
+                    distribución y producción.
+                </p>
+            </div>
+
+            <div class="iconos">
+                <img src="imagenes/icono3.svg" alt="Icono Garantia">
+                <h3>Garantia</h3>
+                <p>Nuestros clientes nos respaldan, por la buena calidad del servicio brindado, quedando así
+                    satisfechos con el producto brindado.
+                </p>
+            </div>
+            </div-nosotros>
+
+    </section>
+
+    <!-- Sección de Productos de la Empresa -->
+    <main class="contenido centrar">
+        <h2 class="fino centrar">Productos en Venta</h2>
+
+        <!-- División del Producto Chocolate -->
+        <div class="contenedor-productos">
+            <div class="producto">
+                <img src="imagenes/chocolates.png" alt="Imagen Chocolate">
+                <div class="contenido-producto">
+                    <h3>Chocolate Bitter</h3>
+                    <p>Chocolates con todo Tipo de Incustraciones y alto porcentaje de Concentración</p>
+                    <p class="precio">S/. 15.00 c/u</p>
+
+                    <!-- Creando Listado de Íconos -->
+                    <ul class="iconos-caracteristicas">
+                        <li><img src="imagenes/icono_wc.svg" alt=""></li>
+                        <li><img src="imagenes/icono_estacionamiento.svg" alt=""></li>
+                        <li><img src="imagenes/icono_dormitorio.svg" alt=""></li>
+                    </ul>
+
+                    <a href="productos/chocolate.html" class="botones boton-anaranjado d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <!-- División del Producto Cocteles -->
+            <div class="producto">
+                <img src="imagenes/cocteles.png" alt="Imagen Cocletes">
+                <div class="contenido-producto">
+                    <h3>Cocteles</h3>
+                    <p>Cocteles de los sabores más exóticos de la Selva Peruana</p>
+                    <p class="precio">S/. 45.00 c/u</p>
+
+                    <!-- Creando Listado de Íconos -->
+                    <ul class="iconos-caracteristicas">
+                        <li><img src="imagenes/icono_wc.svg" alt=""></li>
+                        <li><img src="imagenes/icono_estacionamiento.svg" alt=""></li>
+                        <li><img src="imagenes/icono_dormitorio.svg" alt=""></li>
+                    </ul>
+
+                    <a href="productos/cocteles.html" class="botones boton-anaranjado d-block">Ver Producto</a>
+                </div>
+            </div>
+
+            <!-- División del Producto Pasta de Cacao -->
+            <div class="producto">
+                <img src="imagenes/pasta.png" alt="Imagen Pasta">
+                <div class="contenido-producto">
+                    <h3>Pasta de Cacao</h3>
+                    <p>Pasta consistente y de la más alta calidad de Producción</p>
+                    <p class="precio">S/. 18.00 c/u</p>
+
+                    <!-- Creando Listado de Íconos -->
+                    <ul class="iconos-caracteristicas">
+                        <li><img src="imagenes/icono_wc.svg" alt=""></li>
+                        <li><img src="imagenes/icono_estacionamiento.svg" alt=""></li>
+                        <li><img src="imagenes/icono_dormitorio.svg" alt=""></li>
+                    </ul>
+
+                    <a href="productos/pasta.html" class="botones boton-anaranjado d-block">Ver Producto</a>
+                </div>
+            </div>
+        </div>
+        <a href="productos.html" class="botones boton-verde">Ver Todos</a>
+    </main>
+
+
+    <!-- Sección de Cotizaciones -->
+    <section class="imagen-ventas">
+        <div class="contenido contenido-ventas">
+            <h2>Realiza tus Cotizaciones con un Experto</h2>
+            <p>Comunicate con uno de nuestros asesores y cotiza tu requerimiento.</p>
+            <a href="cotizaciones.html" class="botones boton-anaranjado">Empieza a Cotizar</a>
+        </div>
+    </section>
+
+    <!-- Sección de Blog y Testimoniales -->
+    <div class="seccion-inferior contenido seccion">
+        <section class="blog">
+            <!-- Título de la Sección del Blog -->
+            <h3 class="fino centrar">Noticias Divisoria</h3>
+
+            <!-- Articulo de Industria Chocolatera -->
+            <article class="entrada-blog">
+                <div class="imagen-blog">
+                    <img src="imagenes/blog1.png" alt="Industria Chocolatera">
+                </div>
+
+                <div class="texto-blog">
+                    <h4>Los Industria Chocolatera</h4>
+                    <p>Escrito el: <span>18/07/2020</span> por: <span>Arturo de Diaz</span></p>
+                    <p>La industria chocolatera durante el siglo XXI alcanzó un gran nivel
+                        de impacto en el sector producción, siendo uno de los más solicitados.</p>
+                </div>
+            </article>
+
+            <!-- Articulo de Elaboracion de Chocolate -->
+            <article class="entrada-blog">
+                <div class="imagen-blog">
+                    <img src="imagenes/blog2.png" alt="Elaboracion del Chocolate">
+                </div>
+
+                <div class="texto-blog">
+                    <h4>Elaboración de Chocolate en Perú</h4>
+                    <p>Escrito el: <span>24/07/2020</span> por: <span>Deybith de Salazar</span></p>
+                    <p>El Ministerio de la Producción (Produce) apunta a impulsar la elaboración de chocolates con mayor
+                        contenido de cacao peruano</p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Sección de Testimoniales -->
+        <section class="testimoniales">
+            <h3 class="fino centrar">Testimonios</h3>
+            <div class="testimonial">
+                <blockquote>
+                    Vine con mis padres de visita a Tingo María, nos encontramos con el local
+                    de la empresa Divisoria, desde que probé su chocolate me quede encantada.
+                </blockquote>
+                <p>- Morgana María Salazar Diaz -</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Sección Inferior de la Página -->
+    <footer class="inferior-footer seccion">
+        <!-- Navegación Inferior -->
+        <div class="contenido contenido-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactos">Contactos</a>
+            </nav>
+            <p class="copyright">Divisoria Trading - Derechos Reservados &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
