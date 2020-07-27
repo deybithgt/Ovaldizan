@@ -1,0 +1,341 @@
+html{
+    /* Adaptamos un porcentaje de Pixeles para trabajar con REMS */
+    /* 1 REMS equivale a 16 px, pero con el 62.5% ahora equivale a 10px*/
+    /* Eso nos permite poder realizar cálculos más rápidos, solo dividiendo entre 10 */
+    font-size: 62.5%; 
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+    /*Estableciendo Interlineado por Defecto*/
+    line-height: 2rem;
+}
+
+/*Proporción Base de Letras*/
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+/*Estilos Generales*/
+.contenido{
+    max-width: 120rem;
+    /*Asignando Margenes*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.centrar{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.fino{
+    font-weight: 80;
+}
+
+.botones {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 70rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.8rem 3rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.boton-anaranjado {
+    background-color: #e08709;
+}
+
+.boton-verde {
+    background-color: #71b100;
+}
+
+.d-block{
+    display: block!important;
+}
+
+/*Parte Superior - Header*/
+.encabezado {
+    background-color: #04091e;
+    padding: 1rem 0 1.5rem 0;
+}
+
+
+.encabezado.inicio {
+    background-image: url(../imagenes/encabezado.png);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    padding: 0;
+}
+
+.hijos-contenido h1{
+    color: #ffffff;
+    padding-bottom: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hijos-contenido {
+    height: 100%;
+    /*Aplicamos las direcciones con FlexBox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barra {
+    display: flex;
+    /*Espaciado entre logo-barra*/
+    justify-content: space-between;
+    /*Alineación de elementos de la barra*/
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/*Opciones de Navegación*/
+
+.navegacion a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    /*Separación entre elementos*/
+    margin-right: 2rem;
+}
+/*Seudoselector para color al seleccionar elemento*/
+.navegacion a:hover {
+    color: #969696;
+}
+
+/*Seudoselector para Elementos*/
+.navegacion a:last-of-type {
+    margin: 0rem;
+}
+
+/*Iconos Nosotros*/
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos{
+    flex-basis: calc(33.3% - 2rem);
+    text-align: center;
+}
+
+.iconos h3{
+    text-transform: uppercase;
+}
+
+/*Productos*/
+
+.contenedor-productos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.producto{
+    flex-shrink: 0;
+    flex-basis:  calc(33.3% - 2rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+}
+
+.contenido-producto{
+    padding: 1.4rem;
+}
+
+.contenido-producto h3, .contenido-producto p{
+    margin: 1rem;
+}
+
+.precio {
+    color: #71b100;
+    font-weight: 70rem;
+}
+
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.iconos-caracteristicas li{
+    flex: 1;
+}
+
+
+/*Sección de Cotizaciones*/
+.imagen-ventas {
+    background-image: url(../imagenes/cotizacion.png);
+    background-position: center center;
+    background-size: cover;
+    height: 30rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-ventas{
+    flex: 1;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido-ventas p{
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+/*Sección Blog y Testimoniales*/
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales{
+    flex-basis: calc(40% - 1.8rem);
+}
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen-blog{
+    flex-basis: 30%;
+}
+
+.entrada-blog .texto-blog{
+    flex-basis: calc(70% - 2rem);
+}
+
+.texto-blog h4{
+    margin: 0;
+    line-height: 4rem;
+}
+
+/*Creando Seudoelemento de Linea*/
+.texto-blog h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: 0.5rem;
+    background-color: #71b100;
+    margin-top: 0.5rem;
+}
+
+.texto-blog span{
+    color: #e08709;
+}
+
+.testimonial{
+    background-color: #e08709;
+    font-size: 2.2rem;
+    padding: 1.8rem;
+    color: #ffffff;
+    border-radius: 0 2rem;
+}
+
+.testimonial p{
+    text-align: right;
+}
+
+.testimoniales blockquote{
+    position: relative;
+    line-height: 5rem;
+    padding-left: 4rem;
+}
+
+.testimoniales blockquote::before{
+    content: '';
+    background-image: url(../imagenes/comilla.svg);
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    position: absolute;
+    left: -2rem;
+    top: -1rem;
+}
+
+.inferior-footer{
+    background-color: #04091e;
+    margin: 0;
+}
+
+.copyright{
+    margin: 0;
+    color: #ffffff;
+}
+
+.contenido-footer{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*1. Página Nosotros*/
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 2rem;
+}
+
+.contenido-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+/*2. Página Producto*/
+
+.producto-total{
+    flex-basis:  calc(25% - 2rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.titulo-productos{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
